@@ -5,9 +5,18 @@
  - node package
  - improve zsh config and themes list in readme
 
- Messages :
- disable sudo messages (updates securities)
- sudo chmod -x /etc/update-motd.d/98-fsck-at-reboot
+# Documentation :
+## Example for disable sudo messages (updates securities) :
+ `sudo chmod -x /etc/update-motd.d/98-fsck-at-reboot`
  
- execute profile scripts
- run-parts /etc/update-motd.d
+## Example for execute profile scripts :
+ `run-parts /etc/update-motd.d`
+
+
+## Rename linux user and change /home
+`usermod -l tom -m -d /hom/tom/ old_username`
+
+## Change users info : password/shell
+`passwd tom`
+`usermod --shell /usr/bin/zsh tom`
+
