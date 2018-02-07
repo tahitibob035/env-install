@@ -12,6 +12,10 @@
         name: wget,vim,git,curl
         update_cache: yes 
 
+    - name: Git flow install
+      become: yes
+      shell: wget --no-check-certificate -q  https://raw.githubusercontent.com/petervanderdoes/gitflow-avh/develop/contrib/gitflow-installer.sh && sudo bash gitflow-installer.sh install stable; rm gitflow-installer.sh
+
     - name: Install apt transport https
       become: yes
       package:
@@ -42,10 +46,10 @@
       become: yes
       shell: chsh -s `which zsh`
     - name: Oh My Zsh Config 1
-      besome: yes
+      become: yes
       shell: grep -q -F 'export PATH="$PATH:/sbin:/usr/sbin:usr/local/sbin"' ~/.zshrc || echo 'export PATH="$PATH:/sbin:/usr/sbin:usr/local/sbin"' >> ~/.zshrc
     - name: Oh My Zsh Config 2
-      besome: yes
+      become: yes
       shell: grep -q -F 'sudo run-parts /etc/update-motd.d' ~/.zshrc || echo 'sudo run-parts /etc/update-motd.d' >> ~/.zshrc
 
 
