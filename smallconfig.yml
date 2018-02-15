@@ -33,6 +33,9 @@
       package:
         name: sublime-text
         update_cache: yes
+    - name: Copy snippets
+      become: no
+      shell: cp ./readme.sublime-snippet ~/.config/sublime-text-3/Packages/User/
 
     - name: Install zsh and git-core
       become: yes
