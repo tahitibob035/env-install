@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## Unreleased
 ### Added
+- custom ttl.zsh-theme from github
 - Gitignore file
 - Ansible install script with apt-get
 - Ansible Playbook for small configurations

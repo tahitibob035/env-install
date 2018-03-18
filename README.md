@@ -18,10 +18,8 @@ This project install a development environment via ansible : *git*, *sublimetext
 `ansible-playbook smallconfig.yml`
 
 ## TODO list
-* add changelog + snippet
-* install gitflow
 * install nodejs
-* improve zsh config and themes list in readme
+* improve zsh config
 
 ## Extra - common linux commands :
 ### Example for disable sudo messages (updates securities) :
