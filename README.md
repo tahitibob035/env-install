@@ -13,6 +13,7 @@ This project install a development environment via ansible : *git*, *sublimetext
 
 ## Usage
 This step will install a small environment for development (git flow, sublime text...)
+
 `ansible-playbook smallconfig.yml`
 
 ## TODO list
