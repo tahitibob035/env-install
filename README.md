@@ -12,7 +12,7 @@ This project install a development environment via ansible : *git*, *sublimetext
 2. Modify your inventory in `/etc/ansible/hosts`. Exemple file in this repo.
 
 ## Usage
-
+This step will install a small environment for development (git flow, sublime text...)
 `ansible-playbook smallconfig.yml`
 
 ## TODO list
