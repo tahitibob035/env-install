@@ -8,10 +8,8 @@ This project install a development environment via ansible : *git*, *sublimetext
 
 ## Installation
 
-### Requirements
-* Linux
-
-`git clone https://github.com/tahitibob035/env-install && ./ansible-install-withapt.sh` 
+1. `git clone https://github.com/tahitibob035/env-install && ./ansible-install-withapt.sh` 
+2. Modify your inventory in `/etc/ansible/hosts`. Exemple file in this repo.
 
 ## Usage
 
