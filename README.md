@@ -8,12 +8,17 @@ This project install a development environment via ansible : *git*, *sublimetext
 
 ## Installation
 
-1. `git clone https://github.com/tahitibob035/env-install && ./ansible-install-withapt.sh` 
+1. `git clone https://github.com/tahitibob035/env-install && ./ansible-install-withapt.sh`
 2. Modify your inventory in `/etc/ansible/hosts`. Exemple file in this repo.
 
 ## Usage
-This step will install a small environment for development (git flow, sublime text...)
 
+#### This step below will install sudoers :
+
+ 1. In the `sudoers.yml` file, modify the *var sudoers* with your user login
+ 2. `ansible-playbook sudoers.yml`
+
+#### This command below will install a small environment for development (git flow, sublime text...)
 `ansible-playbook smallconfig.yml`
 
 ## TODO list
@@ -23,7 +28,7 @@ This step will install a small environment for development (git flow, sublime te
 ## Extra - common linux commands :
 ### Example for disable sudo messages (updates securities) :
  `sudo chmod -x /etc/update-motd.d/98-fsck-at-reboot`
- 
+
 ### Example for execute profile scripts :
  `run-parts /etc/update-motd.d`
 
